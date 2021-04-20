@@ -3,64 +3,99 @@
 
 /*Contenidor superior*/
 
+header{
+    background-image: url(img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 10px 30px;
+    height: 15%;
+   
+   
+
+}
+
+
+
 .contenidor-cap{
     display: flex;
     margin: 30px 30px 0px 30px;
     padding: 30px 30px;
-    border: 10px solid #000;
     justify-content: space-around;
+  
     
     
 }
 
 .contenidor-cap div{
     margin: 10px;
-
-}
-
-
-.element1{
-    display: flex;
-    flex-grow: 1;
-    padding: 1px;
-    border: 1px solid black;
-   
-    
+    justify-content: center;
     
 
 }
-.element2{
-    display: flex;
-    flex-grow: 3;
-    padding: 1px;
-    border: 1px solid black;
 
-}
-.element3{
+
+.logo{
     display: flex;
     flex-grow: 1;
     padding: 1px;
-    border: 1px solid black;
+    height: 143px;
+    width: 150px;
 
 }
 
-.element4{
+.nav-menu{
     display: flex;
-    flex-grow: 1;
-    padding: 1px;
-    border: 1px solid black;
+    list-style: none;
+    flex-grow: 2;
+}
 
+.nav-menu a{
+    margin: 3%;
+    color: #666;
+    font-size: 20px;
+}
+
+
+
+.xarxes-socials{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 3px;
+    font-size: 20px;
+    align-items: flex-end;
 
 }
+
+.xarxes-socials a{
+    margin: 10px;
+    color: #666
+
+}
+
+
 
 /*Contenidor infoerior*/
 
 .contenidor-cap2{
     display: flex;
-    margin: 0 30px 30px 30px;
+    margin: 30px 30px 30px 30px;
     padding: 30px;
-    border: 10px solid #000;
-    border-top: 0px;
+    justify-content: center;
+    
+
+}
+
+
+
+.lletres-cap{
+    font-family: 'Lobster', cursive;
+    color: brown;
+    opacity: 0.7;
+    text-align: center;
+    padding: 1% 30% 1% 30%;
+    font-size: x-large;
+    background-color: rgba(97, 96, 94, 0.2)
 }
 
 /*Aritcle contigut central*/
@@ -73,8 +108,7 @@ article{
 .contenidor-art{
     display: flex;
     flex-direction: column;
-    margin: 0 0 30px 30px;
-    padding: 3%;
+    margin: 0 0 10px 30px;
     border: 10px solid #000;
     flex-grow: 3;
 }
@@ -82,10 +116,8 @@ article{
 .contenidor-art div{
     display: flex;
     flex-grow: 1;
-    padding: 1px;
-    margin: 30px;
-    border: 1px solid black;
-    
+  
+
 }
 
 .colsArt{
@@ -103,17 +135,61 @@ article{
     flex-direction: column;
 }
 
+.cols3{
+    display: flex;
+    flex-direction: column;
+   
+ 
+}
+
+.imatges-japo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(209, 197, 181, 0.7);
+    margin: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.img-foto{
+    position: relative;
+    max-height: fit-content;
+
+}
+
+.img-foto h3{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+}
+
+.section{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(216, 85, 85, 0.5);
+    width: 100%;
+    font-size: x-large;
+    color: #fff;
+}
+
+
+.imatges-japo img{
+    width: 100%;
+    max-height: 400px;
+    
+}
+
+
 
 /*Contenidor de la dreta*/
 
 .contenidor-art2{
     display: flex;
     flex-direction: column;
-    margin: 0 30px 30px 0;
-    padding: 30px;
+    margin: 0 0 10px 10px;
     border: 10px solid #000;
-    border-left: 0px; 
-    flex-grow: 1;
+    flex-grow: 3;
 }
 
 
@@ -121,11 +197,7 @@ article{
 .contenidor-art2 div{
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    
-    
+    max-width: 100%
 }
 
 /*Peu de pàgima*/
@@ -135,7 +207,12 @@ footer{
     margin: 30px;
     margin-top: 0;
     padding: 30px;
-    border: 10px solid #000;
+    background: brown;
+    font-family: 'Lobster', cursive;
+    color:white;
+    opacity: 0.7;
+    font-size: x-large;
+    
 }
 
 footer div{
@@ -143,25 +220,29 @@ footer div{
     flex-direction: column;
     flex-grow: 1;
     padding: 1px;
-    border: 1px solid black;
+    align-items: center;
+    
 }
 
 
 @media(max-width: 700px){
     
 /*Capçalera*/
+header{
+    display: flex;
+    flex-direction: column;
 
+}
 .contenidor-cap{
-    border: 15px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    
 }
 
-/*Contenidor superior*/
 
-.contenidor-cap2{
-    border: 15px solid #000;
-    border-top: none;
 
-}
 
 
 /*Contenidor de la dreta*/
@@ -205,25 +286,24 @@ footer{
     /*Capçalera*/
     
     .contenidor-cap{
-        border: 15px solid #000;
         display: flex;
         flex-direction: column;
+    }
+
+    .text-menu a {
+        display: none
     }
     
     /*Contenidor superior*/
     
-    .contenidor-cap2{
-        border-top: none;
-        
-    
-    }
+   
 
     /*Contenidor art*/
     .colsArt{
         display: flex;
         flex-direction: column;
-        margin: 0 0 30px 0;
-        padding: 30px;
+        margin: 0px;
+        padding: 0px;
        
     }
 
