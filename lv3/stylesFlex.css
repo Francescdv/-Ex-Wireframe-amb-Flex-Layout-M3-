@@ -1,0 +1,303 @@
+
+/*Capçalera*/
+
+/*Contenidor superior*/
+
+header{
+    background-image: url(img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    height: 15%;
+   
+   
+
+}
+
+
+
+.contenidor-cap{
+    display: flex;
+    margin: 30px 30px 0px 30px;
+    padding: 30px 30px;
+    justify-content: space-around;
+  
+    
+    
+}
+
+.contenidor-cap div{
+    margin: 10px;
+    justify-content: center;
+    
+
+}
+
+
+.logo{
+    display: flex;
+    flex-grow: 1;
+    padding: 1px;
+    height: 143px;
+    width: 150px;
+
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    flex-grow: 2;
+}
+
+.nav-menu a{
+    margin: 3%;
+    color: #666;
+    font-size: 20px;
+}
+
+
+
+.xarxes-socials{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 3px;
+    font-size: 20px;
+    align-items: flex-end;
+
+}
+
+.xarxes-socials a{
+    margin: 10px;
+    color: #666
+
+}
+
+
+
+/*Contenidor infoerior*/
+
+.contenidor-cap2{
+    display: flex;
+    margin: 30px 30px 30px 30px;
+    padding: 30px;
+    justify-content: center;
+    
+
+}
+
+
+
+.lletres-cap{
+    font-family: 'Lobster', cursive;
+    color: brown;
+    opacity: 0.7;
+    text-align: center;
+    padding: 1% 30% 1% 30%;
+    font-size: x-large;
+    background-color: rgba(97, 96, 94, 0.2)
+}
+
+/*Aritcle contigut central*/
+
+article{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
+}
+
+/*Contenidor principal*/
+.contenidor-art{
+    margin: 0 0 10px 0;
+    border: 10px solid #000;
+    flex-grow: 3;
+}
+
+
+.colsArt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.imatges-japo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(209, 197, 181, 0.7);
+    margin: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.img-foto{
+    position: relative;
+    max-height: fit-content;
+
+}
+
+.img-foto h3{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+}
+
+.section{
+    position: absolute;
+    bottom: 4px;
+    background-color: rgba(216, 85, 85, 0.5);
+    width: 100%;
+    font-size: x-large;
+    color: #fff;
+}
+
+
+.imatges-japo img{
+    width: 100%;
+    max-height: 400px;
+    
+}
+
+
+
+/*Contenidor de la dreta*/
+
+.contenidor-art2{
+
+    margin: 0 0 10px 10px;
+    border: 10px solid #000;
+    flex-grow: 3;
+}
+
+
+
+.contenidor-art2 div{
+
+    max-width: 100%
+}
+
+/*Peu de pàgima*/
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 10px;
+    margin-top: 0;
+    padding: 30px;
+    background: brown;
+    font-family: 'Lobster', cursive;
+    color:white;
+    opacity: 0.7;
+    font-size: x-large;
+    
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1px;
+    align-items: center;
+    
+}
+
+
+@media(max-width: 700px){
+    
+/*Capçalera*/
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.contenidor-cap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    
+}
+
+
+
+
+
+/*Contenidor de la dreta*/
+
+article{
+    grid-template-columns: 1fr;
+
+}
+
+
+.contenidor-art{
+    display: grid;
+    grid-template-columns: 1f 1fr;
+    margin: 10px 10px 0 10px;
+    border: 12px solid #000;
+  
+}
+
+/*Contenidor de la dreta*/
+
+.contenidor-art2{
+    margin: 0 10px 10px 10px;
+    border: 12px solid #000;
+    border-top: 0px; 
+   
+}
+
+
+
+/*Peu de pàgima*/
+
+footer{
+    border: 12px solid #000;
+}
+
+
+}
+
+
+
+@media(max-width: 500px){
+    
+    /*Capçalera*/
+    
+    .contenidor-cap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-menu a {
+        display: none
+    }
+    
+    /*Contenidor superior*/
+    
+   
+
+    /*Contenidor art*/
+    .colsArt{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+
+    .cols3{
+        margin: 0 0 30px 0;
+    }
+
+    
+
+
+
+
+
+
+}
