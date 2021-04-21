@@ -7,7 +7,7 @@ header{
     background-image: url(img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 0 10px 30px;
+    margin: 30px 30px 30px 30px;
     height: 15%;
    
    
@@ -27,7 +27,7 @@ header{
 }
 
 .contenidor-cap div{
-    margin: 10px;
+    margin: 30px;
     justify-content: center;
     
 
@@ -102,6 +102,7 @@ header{
 
 article{
     display: flex;
+    margin: 0px 30px 0px 0px;
 }
 
 /*Contenidor principal*/
@@ -237,7 +238,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 30px;
+    
     
 }
 
@@ -249,6 +250,7 @@ header{
 
 article{
     flex-direction: column;
+    margin-right: 0px;
 
 }
 
